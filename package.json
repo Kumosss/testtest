@@ -1,0 +1,26 @@
+{
+  "name": "version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kumosss/testtest.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kumosss/testtest/issues"
+  },
+  "homepage": "https://github.com/Kumosss/testtest#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "save": "^2.4.0"
+  }
+}
