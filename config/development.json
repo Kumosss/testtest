@@ -1,10 +1,11 @@
 {
-"port": 8080,
-"db": {
-    "url": "mongodb://localhost:27017",
-    "name": "dev",
-    "options": {
-        "useUnifiedTopology":true
+    "port": "8000",
+
+    "db": {
+        "url":"mongodb://127.0.0.1:27017",
+        "name":"gigas",
+        "Options":{
+            "undefinedTopology": true
+        }
     }
-}
 }

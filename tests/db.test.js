@@ -20,11 +20,11 @@ describe('Test db interface', () => {
 			throw(e)
 		}
 	});
-
+	
 	afterAll(() => {
 		db.disconnect()
 	})
-
+	
 	afterEach(async () => {
 		try {
 			await db.drop('rss')
@@ -41,7 +41,7 @@ describe('Test db interface', () => {
 			throw(e)
 		}
 	})
-
+	
 	test('It should find data', async () => {
 		try {
 			const data = await db.find('rss', { email: { $eq: 'test@test.pl' } })
@@ -59,11 +59,11 @@ describe('Test db interface', () => {
 			throw(e)
 		}
 	})
-
+	
 	test('It should remove value', async () => {
 		try {
 			const res = await db.remove('rss', { 'email': 'test@test.pl' })
-      expect(res.result.ok).toBe(1)
+      		expect(res.result.ok).toBe(1)
 		} catch (e) {
 			throw(e)
 		}
